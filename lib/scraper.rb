@@ -4,7 +4,7 @@ require 'pry'
 class Scraper
 
   def self.scrape_index_page(index_url)
-    index_url = File.read('./fixtures/student-site/index.html')
+    kickstarter = Nokogiri::HTML(index_url)
     
   end
 
